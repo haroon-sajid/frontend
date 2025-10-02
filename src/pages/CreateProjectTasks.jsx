@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { fetchTeams, fetchUsers } from "../api/project";
 
 // const API_URL = "http://127.0.0.1:8000";
-const API_URL = "https://teamflow-backend-yi6l.onrender.com/";
+const API_URL = "https://backend-x7w4.onrender.com";
 
 
 async function createProjectWithTasks(payload) {
@@ -65,7 +65,7 @@ export default function CreateProjectTasks() {
         team_id: Number(teamId),
         members: rows,
       });
-      setMsg("✅ Project & tasks created!");
+      setMsg(" Project & tasks created!");
       setTimeout(() => nav("/admin"), 1200);
     } catch (err) {
       alert(err.message);

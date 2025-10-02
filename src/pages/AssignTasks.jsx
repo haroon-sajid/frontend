@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { fetchProjects, fetchUsers, fetchTeams } from "../api/project";
 
 // const API_URL = "http://127.0.0.1:8000";
-const API_URL = "https://teamflow-backend-yi6l.onrender.com/";
+const API_URL = "https://backend-x7w4.onrender.com";
 
 
 async function bulkCreateTasks(projectId, title, desc, userIds) {
